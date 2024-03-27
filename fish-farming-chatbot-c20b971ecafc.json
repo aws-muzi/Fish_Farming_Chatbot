@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "fish-farming-chatbot",
+  "private_key_id": "c20b971ecafc76d8e3a5c6e051b22e1817ab71cd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC9lh9VVDJxgtD0\nW5rvwi5mxKYbYAfcaikrxpIt+NAFLhG7Qmm+ZR2QLfaM7aQxu0/SabB3L65Ox1M/\nkOzkaa6HiSFxkFIYrxt6ieX+qW5L4NOOxPiPzld79j15iU/WRh+n96/LBI/Gq/AM\n5QhZOo0LqTmXmAghBuOZAs7ZzAlgkOE/haMazlUCiFlrxmVISEcFNAiqbbNu+lQ/\nN9zVGksKxElaaplpXSZtpLjDmNdH0rGN5Jzyza3RToQieKRyKAI1nYFaUZIdhe3d\n9hhDCUnlwWW3iFjy7xBBBu9M+2GsoMqr7zidQVhF08hlX3siNBHnntPmdav2HQSB\nyq4CCfQ9AgMBAAECggEADPU3ywiS3LieOOAR+j/WwBDCHFjh8KoTik8WKqzjkEG9\nKy63ijCLEWcIKksLz+0HivrM+Y3OvMpZjEdcNE3CL2KrYIGxZXKCeaD3PAKvQTcV\nU/VuhRW2Bl5Rhqm17+VMa0STRVhYeLHDxH3a+45JmaRwBUZ6N8JVcrMtxCvH8EuY\nRhK5turW08ckETmcX8XpsWAF2o+VnjK9Cx70DiHH1b4/jlMIKWGxeCf8NEpgxNzb\nAL5nhXyFxZfRL+ZKsJG2cyVplU266V+6uOWs02yP5UbSc0O99tkvHhOZLgLtnacc\n0o9haE7oqfxXnLMJsG9ycTEi89OKppwTd7NfQgJbWQKBgQD/xqoZ3pYbn/+Y8ye9\njTPMZ0eIJsfPcErHKhFSiMDgYMI+PDiHSmqOR9T0TQ5ClnxT+R2YtDB6lLnoiYv9\n2d/FtkHzVq+wBvSOf1zO3qRxxclChtx1OGXbGkWqhlCLMm3ZDpIDApRY6hosNTKa\nvOcaxRMzeEi0q3fauphFEwuVnwKBgQC9wJ7kPZkD2yAY9Wsqafwf+jhxblf2yoFX\nBoUdnEtb+/8S0diLQhXAPQvU+6u0x2tUJ7C2X2DaQ7DVhuT1c99wTcIUqPQN9JVU\nXFP/ORuw92OPPUWYN449KB+v5mYzhk/CT+SytQ/Gky44zLHdVvKnd6/aNmfhfT1f\nNVY1RBhQowKBgHqEDraViBFzclsxHbgOCuG+FuWArfUPNMJxxBpkpv7TWje1YN5t\nJt1ASyE6R7pdmvAeQ68BoLcWxnY8bHIMCsQJqU2GGGGY80vOdgYhX2Of+eeD8dW0\nThXFX9luvOXwIe32rLoEYkq02BSU5sh387s+6xOcajcgayi6eHWdyc7BAoGBAJLv\nntrFLEFFJMTO/o5YhelJPP3xYWJ1C9UU8m2sgtqW971eDB5CLU+wtgHWZO9XYTBI\nj9mZYAmEU2H11ESR1ttDC2AuONa5qA0sdcr0MRJHb6wS2Vp24slO0cLHWirZ/ddN\nQJ52AOJXRHqtX6ozUzIFR4JlkOmWrriUN86FjYKbAoGBAJNkGC+WHsam1WW4uQBd\ntBXl5PklMTbluF5QcPY4U6VG7exCQLmA7gc6C5BXQ+QhUlLhk+Jaj6IhJbOI7/2R\n2rGvHsqbq6E8K2aLlhEn19ptSQ3Y3K6cTa+EP5kyrrmyUeeIRtomtbaDqsSbxduc\nnE0iuhzaLXxKTECZOZM4h6gX\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-hgiq1@fish-farming-chatbot.iam.gserviceaccount.com",
+  "client_id": "102934897279402329950",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-hgiq1%40fish-farming-chatbot.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
