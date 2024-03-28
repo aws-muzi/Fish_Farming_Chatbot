@@ -33,4 +33,4 @@ def app():
         st.title('')
         if st.session_state.username=='':
             st.error('Please Login first')
-            st.image("../gif/sad.gif")
+            st.image("sad.gif")
