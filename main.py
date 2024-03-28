@@ -45,13 +45,28 @@ class MultiApp:
             
         if app == "Forum":
             home.app()
+            st.set_page_config(
+                initial_sidebar_state = "collapsed",
+            )
         if app == "Account":
             account.app()
+            st.set_page_config(
+                initial_sidebar_state = "collapsed",
+            )
         if app == 'About':
             about.app()
+            st.set_page_config(
+                initial_sidebar_state = "collapsed",
+            )
         if app == 'Your Posts':
             your_posts.app()
+            st.set_page_config(
+                initial_sidebar_state = "collapsed",
+            )
         if app == 'ask-a-bot':
             chatbot.app()
+            st.set_page_config(
+                initial_sidebar_state = "collapsed",
+            )
     
     run()
