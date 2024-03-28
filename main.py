@@ -5,7 +5,7 @@ import about, account, home, chatbot, your_posts
 
 st.set_page_config(
     page_title="Fish Farming",
-    initial_sidebar_state = "expanded",
+    initial_sidebar_state = "auto",
 )
 st.write("", unsafe_allow_html=True)
 
