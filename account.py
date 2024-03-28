@@ -31,6 +31,8 @@ def app():
                 progress_bar.progress(perc_completed + 1)
             st.success('Login Successful')
             st.balloons()
+            time.sleep(0.02)
+            progress_bar.empty()
             
             st.session_state.username = user.uid
             st.session_state.useremail = user.email
