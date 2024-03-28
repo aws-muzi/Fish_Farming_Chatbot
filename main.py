@@ -47,6 +47,7 @@ class MultiApp:
             home.app()
         if app == "Account":
             account.app()
+            st.session_state["sidebar_visible"] = False
         if app == 'About':
             about.app()
         if app == 'Your Posts':
