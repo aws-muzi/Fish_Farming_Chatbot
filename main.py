@@ -45,14 +45,12 @@ class MultiApp:
             
         if app == "Forum":
             home.app()
-            )
         if app == "Account":
             account.app()
         if app == 'About':
             about.app()
         if app == 'Your Posts':
-            your_posts.app()
-           
+            your_posts.app()           
         if app == 'ask-a-bot':
             chatbot.app()
             
