@@ -13,12 +13,12 @@ from firebase_admin import firestore
 from openai import OpenAI
 
 
-def display_name():
+def my_t():
     now = datetime.now()
     st.write("Current Time:", now.strftime("%H:%M:%S"))
 
 while True:
-    display_time()
+    my_t()
     st.empty()
 
 
