@@ -63,9 +63,8 @@ class MultiApp:
         now = datetime.now()
         st.write(now.strftime("%H:%M:%S"))
     
-    try:
-        now = datetime.now()  
-        st.empty()
+    now = datetime.now()  
+    st.empty()
     
 
 
