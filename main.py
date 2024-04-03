@@ -2,6 +2,7 @@ import streamlit as st
 
 from streamlit_option_menu import option_menu
 import about, account, home, chatbot, your_posts
+from datetime import datetime
 
 st.set_page_config(
     page_title="Fish Farming",
@@ -56,3 +57,13 @@ class MultiApp:
             chatbot.app()
             
     run()
+
+
+    def my_t():
+        now = datetime.now()
+        st.write("Current Time:", now.strftime("%H:%M:%S"))
+
+    while True:
+        my_t()
+        st.empty()
+
