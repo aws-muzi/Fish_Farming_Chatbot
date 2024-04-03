@@ -59,7 +59,7 @@ class MultiApp:
     run()
 
 
-
+"""
 def my_t():
         now = datetime.now()
         return now.strftime("%H:%M:%S")
@@ -74,5 +74,5 @@ def my_t():
     st.write("Current Time: ", my_t())
 
 
-    
+    """
 
