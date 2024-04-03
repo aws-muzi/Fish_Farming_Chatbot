@@ -12,17 +12,6 @@ from streamlit_option_menu import option_menu
 from firebase_admin import firestore
 from openai import OpenAI
 
-
-def my_t():
-    now = datetime.now()
-    st.write("Current Time:", now.strftime("%H:%M:%S"))
-
-while True:
-    my_t()
-    st.empty()
-
-
-
 def app():
     
     db=firestore.client()
