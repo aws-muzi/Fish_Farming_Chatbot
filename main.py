@@ -59,17 +59,17 @@ class MultiApp:
     run()
 
 
-def my_t():
-    now = datetime.now()
-    return now.strftime("%H:%M:%S")
-last_update = None
+    def my_t():
+        now = datetime.now()
+        return now.strftime("%H:%M:%S")
+    last_update = None
     
-while True:
-    now = datetime.now()
-    if last_update is None or (now - last_update).total_seconds() >= 1:
-        st.write("Current Time: ", my_t())
-        last_update = now        
-    st.empty()
+    while True:
+        now = datetime.now()
+        if last_update is None or (now - last_update).total_seconds() >= 1:
+            st.write("Current Time: ", my_t())
+            last_update = now        
+        st.empty()
     
 
 
