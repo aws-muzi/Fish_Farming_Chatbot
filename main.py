@@ -59,19 +59,3 @@ class MultiApp:
     run()
 
 
-    def my_t():
-        now = datetime.now()
-        return now.strftime("%H:%M:%S")
-
-    time_element = st.empty()
-
-    while True:
-        now = datetime.now()
-        time_string = my_t()
-        time_element.text = time_string
-        st.empty()
-    
-
-
-
-
