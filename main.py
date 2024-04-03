@@ -2,7 +2,6 @@ import streamlit as st
 
 from streamlit_option_menu import option_menu
 import about, account, home, chatbot, your_posts
-from datetime import datetime
 
 st.set_page_config(
     page_title="Fish Farming",
