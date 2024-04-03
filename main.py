@@ -1,4 +1,4 @@
-8fwtimport streamlit as st
+import streamlit as st
 
 from streamlit_option_menu import option_menu
 import about, account, home, chatbot, your_posts
