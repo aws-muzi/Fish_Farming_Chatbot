@@ -1,4 +1,4 @@
-import streamlit as st
+8fwtimport streamlit as st
 
 from streamlit_option_menu import option_menu
 import about, account, home, chatbot, your_posts
@@ -61,10 +61,15 @@ class MultiApp:
 
     def my_t():
         now = datetime.now()
-        st.write(now.strftime("%H:%M:%S"))
+        return now.strftime("%H:%M:%S")
 
-    my_t()
-    st.empty()
+    time_element = st.empty()
+
+    while True:
+        now = datetime.now()
+        time_string = my_t()
+        time_element.text = time_string
+        st.empty()
     
 
 
