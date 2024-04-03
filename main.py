@@ -58,7 +58,9 @@ class MultiApp:
             
     run()
 
-    def my_t():
+
+
+def my_t():
         now = datetime.now()
         return now.strftime("%H:%M:%S")
     last_update = None
