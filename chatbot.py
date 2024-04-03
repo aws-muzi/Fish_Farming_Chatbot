@@ -10,8 +10,19 @@
 import streamlit as st
 from streamlit_option_menu import option_menu 
 from firebase_admin import firestore
-from datetime import datetime
 from openai import OpenAI
+
+
+def display_name():
+    now = datetime.now()
+    st.write("Current Time:", now.strftime("%H:%M:%S"))
+
+while True:
+    display_time()
+    st.empty()
+
+
+
 def app():
     
     db=firestore.client()
@@ -102,10 +113,4 @@ def app():
             st.error('Please Login first')
             st.image("sad.gif")
 
-def display_name():
-    now = datetime.now()
-    st.write("Current Time:", now.strftime("%H:%M:%S"))
 
-while True:
-    display_time()
-    st.empty()
