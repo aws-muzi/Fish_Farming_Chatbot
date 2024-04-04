@@ -58,7 +58,7 @@ def app():
             st.session_state.user_input = ""
 
         # Display chat history
-        st.write("Chat History")
+#        st.write("Chat History")
         with st.container():
             for message in st.session_state.messages:
                 role = "You:" if message["role"] == "user" else "Expert:"
