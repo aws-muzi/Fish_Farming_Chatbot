@@ -76,7 +76,8 @@ def app():
                 
                 st.success('Your account has been successfully created!')
                 st.success('You may login using your email and password')
-                st.balloons()
+                #st.balloons()
+                st.image("happy.gif")
                 
                 
     if st.session_state.signout:
@@ -84,6 +85,4 @@ def app():
         st.text('UserName: ' + st.session_state.username)
         st.text('Email ID: ' + st.session_state.useremail)
         st.button('Sign out', on_click= t)
-        
-        st.image("happy.gif")
         
