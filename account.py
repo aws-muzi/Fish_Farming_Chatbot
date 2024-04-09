@@ -11,8 +11,7 @@ if not firebase_admin.initialize_app(cred):
     firebase_admin.initialize_app(cred)
 
 def app():
-    
-    st.button("Click Me")
+
   #  choice = st.selectbox('Login or Signup', ['Login', 'Sign Up'])
     
     if 'username' not in st.session_state:
@@ -39,7 +38,7 @@ def app():
             
             st.session_state.signout = True
             st.session_state.signedout = True
-            
+            st.button("Click Me")
         except:
             st.warning('Login Failed')
     
@@ -86,4 +85,6 @@ def app():
         st.button('Sign out', on_click= t)
         
         st.image("happy.gif")
-        
+    st.button("Click Me")
+
+st.button("Click Me")
