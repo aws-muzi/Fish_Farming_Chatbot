@@ -9,6 +9,18 @@ cred = credentials.Certificate("fish-farming-chatbot-c20b971ecafc.json")
 firebase_admin.initialize_app(cred)
 
 def app():
+    # Session state for sidebar visibility
+    if 'sidebar_open' not in st.session_state:
+        st.session_state.sidebar_open = True
+
+    # Sidebar content (shown only if sidebar_open is True)
+    with st.sidebar if st.session_state.sidebar_open:
+        st.write("This is the sidebar content")
+
+    # Link (button) to close sidebar and redirect
+    if st.button("Close Sidebar and Go to Main Page", on_click=lambda:
+              [st.session_state.sidebar_open = False, st.experimental_redirect("/")']):
+    pass
     
     
   #  choice = st.selectbox('Login or Signup', ['Login', 'Sign Up'])
@@ -84,3 +96,16 @@ def app():
         st.text('Email ID: ' + st.session_state.useremail)
         st.button('Sign out', on_click= t)
         st.image("happy.gif")
+
+
+
+# This is another section
+
+
+
+# Main content (shown regardless of sidebar state)
+st.write("This is the main content")
+
+
+
+
