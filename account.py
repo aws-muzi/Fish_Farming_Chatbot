@@ -86,5 +86,5 @@ def app():
         st.text('Email ID: ' + st.session_state.useremail)
         st.button('Sign out', on_click= t)
         
-        st.image("../gif/happy.gif")
+        st.image("happy.gif")
         
