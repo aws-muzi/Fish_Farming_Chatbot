@@ -38,7 +38,6 @@ def app():
             
             st.session_state.signout = True
             st.session_state.signedout = True
-            st.button("Click Me")
         except:
             st.warning('Login Failed')
     
@@ -85,6 +84,3 @@ def app():
         st.button('Sign out', on_click= t)
         
         st.image("happy.gif")
-    st.button("Click Me")
-
-st.button("Click Me")
