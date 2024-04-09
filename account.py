@@ -12,7 +12,7 @@ if not firebase_admin.initialize_app(cred):
 
 def app():
     
-    
+    st.button("Click Me")
   #  choice = st.selectbox('Login or Signup', ['Login', 'Sign Up'])
     
     if 'username' not in st.session_state:
