@@ -3,5 +3,3 @@ streamlit_option_menu
 firebase_admin
 openai
 datetime
-extra-streamlit-components
-install st-popup
