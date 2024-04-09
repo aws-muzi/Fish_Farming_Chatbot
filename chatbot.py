@@ -101,5 +101,4 @@ def app():
     else:        
         if st.session_state.username=='':
             st.error('Please Login first')
-            st.image("sad.gif")
 
