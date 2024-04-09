@@ -106,31 +106,31 @@ def app():
 
 ##############################################################################
 
-    # Function to display the notepad popup
-    def show_notepad():
-        with st_popup("Notepad", width=800, height=600):
-            content = st.text_area("Write here:", key="notepad_content")
-            save_button = st.button("Save")
+# Function to display the notepad popup
+def show_notepad():
+    with st_popup("Notepad", width=800, height=600):
+        content = st.text_area("Write here:", key="notepad_content")
+        save_button = st.button("Save")
 
-            if save_button:
-                # Get text content
-                text_to_save = st.session_state.notepad_content
+        if save_button:
+            # Get text content
+            text_to_save = st.session_state.notepad_content
 
-                # Get filename from user input (optional)
-                filename = st.text_input("Enter filename (default: notes.txt)", value="notes.txt")
+            # Get filename from user input (optional)
+            filename = st.text_input("Enter filename (default: notes.txt)", value="notes.txt")
 
-                # Save to local machine
-                try:
-                    with open(filename, "w") as file:
-                        file.write(text_to_save)
-                    st.success("Content saved successfully!")
-                except Exception as e:
-                    st.error(f"Error saving file: {e}")
+            # Save to local machine
+            try:
+                with open(filename, "w") as file:
+                    file.write(text_to_save)
+                st.success("Content saved successfully!")
+            except Exception as e:
+                st.error(f"Error saving file: {e}")
 
-    # Main app flow
-    st.title("Streamlit Notepad")
+# Main app flow
+st.title("Streamlit Notepad")
 
-    if st.button("Open Notepad"):
-        show_notepad()
+if st.button("Open Notepad"):
+    show_notepad()
 
 
