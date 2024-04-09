@@ -11,7 +11,6 @@ import streamlit as st
 from streamlit_option_menu import option_menu 
 from firebase_admin import firestore
 from openai import OpenAI
-from st_popup import st_popup
 
 def app():
     
