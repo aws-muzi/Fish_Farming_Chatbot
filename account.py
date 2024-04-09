@@ -6,9 +6,12 @@ import time
 
 
 cred = credentials.Certificate("fish-farming-chatbot-c20b971ecafc.json")
-firebase_admin.initialize_app(cred)
 
-def app():    
+if not firebase_admin.initialize_app(cred):
+    firebase_admin.initialize_app(cred)
+
+def app():
+    
     
   #  choice = st.selectbox('Login or Signup', ['Login', 'Sign Up'])
     
@@ -30,8 +33,6 @@ def app():
                 progress_bar.progress(perc_completed + 1)
             st.success('Login Successful')
             st.balloons()
-            time.sleep(0.02)
-            progress_bar.empty()
             
             st.session_state.username = user.uid
             st.session_state.useremail = user.email
@@ -75,6 +76,7 @@ def app():
                 
                 st.success('Your account has been successfully created!')
                 st.success('You may login using your email and password')
+                st.balloons()
                 
                 
     if st.session_state.signout:
@@ -82,9 +84,6 @@ def app():
         st.text('UserName: ' + st.session_state.username)
         st.text('Email ID: ' + st.session_state.useremail)
         st.button('Sign out', on_click= t)
-        st.image("happy.gif")
-
-
-
-
-
+        
+        st.image("../gif/happy.gif")
+        
