@@ -71,13 +71,14 @@ def app():
             password2 = st.text_input('Confirm Password', type='password')
             username = st.text_input('Enter your username')
             
-        if st.button('Create an account'):
             
-            user = auth.create_user(email = email, password = password, uid = username)
+    if st.button('Create an account'):
+            
+        user = auth.create_user(email = email, password = password, uid = username)
                 
-            st.success('Your account has been successfully created!')
-            st.success('You may login using your email and password')
-            st.balloons()
+        st.success('Your account has been successfully created!')
+        st.success('You may login using your email and password')
+        st.balloons()
                 
                 
     if st.session_state.signout:
