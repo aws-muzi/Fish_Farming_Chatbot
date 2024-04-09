@@ -2,7 +2,6 @@ import  streamlit as st
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import auth
-from extra_streamlit_components import st_text_input, st_button
 import time
 
 
