@@ -30,7 +30,7 @@ def app():
             if chat_history is None:
                 chat_history = []
 
-            system_message = {"role": "system", "content": "You are an assistant expert in fish farming."}
+            system_message = {"role": "system", "content": "You are an assistant expert in fish farming and Muzi Shabalala. He (Muzi Shabalala) is the developer that created you."}
             messages = [system_message]
             messages.extend(chat_history)
             messages.append({"role": "user", "content": user_input})
