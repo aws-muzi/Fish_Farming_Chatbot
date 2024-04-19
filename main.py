@@ -36,7 +36,7 @@ class MultiApp:
                 default_index=0,
                 styles={
                     "container": {"padding": "5!important"},  #61AEA6
-                    "icon": {"color": "#1a725f", "font-size": "20px"}, 
+                    "icon": {"color": "#1a725f", "font-size": "20px","background-color":"white", "padding": "0px 2px"}, 
                     "nav-link": {"color":"#1a725f","font-size": "20px", "text-align": "left", "margin":"0px", "--hover-color": "#90e0ef"},  #a1e3dc
                     "nav-link-selected": {"background-color": "#1a725f","color":"white"},  #1A7269
                     }
