@@ -71,36 +71,6 @@ def app():
             if submit_button:
                 handle_response()
 
-        with st.sidebar:
-            notepad = st.checkbox(":orange[write notes]")
-            if notepad:
-                # Text area for user to enter notes
-                notes = st.text_area("Take your notes here:")
-
-                # Text input for filename
-                filename = st.text_input("Enter a filename for your notes:", "your_notes.txt")
-
-                # Function to generate a text file from notes
-                def get_text_file(notes):
-                    # Convert the notes to bytes
-                    return notes.encode('utf-8')
-
-                # Display the save button and download button conditionally
-                if st.button("Save Notes"):
-                    # Call the function to get text file
-                    tmp_file = get_text_file(notes)
-                    # Check if filename has .txt extension, add if not
-                    if not filename.endswith('.txt'):
-                        filename += '.txt'
-                    # Create download button for the text file
-                    st.download_button(
-                        label="Download Notes",
-                        data=tmp_file,
-                        file_name=filename,
-                        mime="text/plain",
-                        help="Click to download your notes as a TXT file."
-                    )  
-
         st.markdown(
             """
             <style>
