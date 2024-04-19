@@ -42,6 +42,7 @@ class MultiApp:
                     }
         
                 )
+            st.subheader(":orange[Notepad]")
             notepad = st.checkbox(":orange[write notes]")
             if notepad:
                 # Text area for user to enter notes
