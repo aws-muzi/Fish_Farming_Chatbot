@@ -5,7 +5,7 @@ import about, account, home, chatbot, your_posts
 
 st.set_page_config(
     page_title="Fish Farming",
-    initial_sidebar_state = "auto",
+    initial_sidebar_state = "expanded",
 )
 st.write("", unsafe_allow_html=True)
 
@@ -35,13 +35,13 @@ class MultiApp:
                 menu_icon='None',
                 default_index=0,
                 styles={
-                    "container": {"padding": "5!important","background-color":"#00d8bf"},  #61AEA6
-                    "icon": {"color": "white", "font-size": "20px"}, 
-                    "nav-link": {"color":"white","font-size": "20px", "text-align": "left", "margin":"0px", "--hover-color": "#90e0ef"},  #a1e3dc
-                    "nav-link-selected": {"background-color": "#1a725f"},  #1A7269
-                }
+                    "container": {"padding": "5!important"},  #61AEA6
+                    "icon": {"color": "#1a725f", "font-size": "20px"}, 
+                    "nav-link": {"color":"#1a725f","font-size": "20px", "text-align": "left", "margin":"0px", "--hover-color": "#90e0ef"},  #a1e3dc
+                    "nav-link-selected": {"background-color": "#1a725f","color":"white"},  #1A7269
+                    }
         
-            )
+                )
             notepad = st.checkbox(":orange[write notes]")
             if notepad:
                 # Text area for user to enter notes
@@ -69,21 +69,17 @@ class MultiApp:
                         file_name=filename,
                         mime="text/plain",
                         help="Click to download your notes as a TXT file."
-                    )  
-        
+                    )    
             
         if app == "Forum":
             home.app()
         if app == "Account":
             account.app()
-            st.session_state["sidebar_visible"] = False
         if app == 'About':
             about.app()
         if app == 'Your Posts':
-            your_posts.app()           
+            your_posts.app()
         if app == 'ask-a-bot':
             chatbot.app()
-            
+    
     run()
-
-
